@@ -1,0 +1,6 @@
+1/ Tạo Automation folder ở ổ D
+2/ Nhấp vào thanh directory -> cmd
+3/ python -m venv venv (tạo môi trường ảo)
+4/ venv\Scripts\activate
+5/ pip install selenium
+6/ pip install pytest

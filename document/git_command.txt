@@ -1,0 +1,13 @@
+1. git status (list out files changed)
+2. git add ten_file (thêm file changed to be committed)
+3. git status (check color -> green)
+4. git commit -m 'nhập message here'
+5. git push --set- upstream origin ten_branch (đẩy code lên repository)
+6. git checkout -b ten_brach (thêm branch mới)
+7. Trường hợp clone code về máy local mà chỉ hiện ra nhánh master, không hiện nhánh có code mà mình muốn thao tác trên đó, thì dùng lệnh sau:
+
+git clone url của repository tải code về
+→ git fetch
+→ git checkout ten_branch muốn di chuyển tới
+
+8. polling wait
