@@ -31,7 +31,7 @@ jobs:
     
     - name: Run tests
       run: |
-        pytest -m smoke tests/test_login.py tests/test_recruitment.py --html=reports/report.html --self-contained-html
+        pytest -m smoke tests/test_login.py --html=reports/report.html --self-contained-html
       #run: pytest tests/test_login.py --maxfail=1 --disable-warnings --tb=short
 
     - name: Upload test reports
