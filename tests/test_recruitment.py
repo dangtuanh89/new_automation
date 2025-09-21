@@ -3,11 +3,13 @@ from pages.login_page import LoginPage
 from pages.dashboard_page import DashboardPage
 from pages.recruitment_page import RecruitmentPage
 import pytest
+from utils.config_reader import ConfigReader
+
 class TestRecruitmentPage(BaseTest):
     @pytest.mark.smoke
     def test_navigate_to_recruitement_page(self):
         login_page = LoginPage(self.driver)
-        login_page.login('Admin', 'admin123')
+        login_page.login(ConfigReader.get_username(), ConfigReader.get_password())
         
         dashboard_page = DashboardPage(self.driver)
         dashboard_page.navigate_to_recruitment_page()

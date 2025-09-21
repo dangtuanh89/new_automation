@@ -2,12 +2,13 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from utils.config_reader import ConfigReader
+
 class BaseTest:
     @pytest.fixture(scope='class', autouse= True)
     def setup_driver(self, request):
         chrome_options = webdriver.ChromeOptions()
         # Chrome options cho headless mode trên Ubuntu/Linux
-        #chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--headless')
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
 
